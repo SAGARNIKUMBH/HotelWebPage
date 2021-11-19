@@ -1,0 +1,115 @@
+<html>
+<head>
+    <style>
+        body{
+   font-size:20px;
+            color: white;
+            background-size: cover;
+        }
+         .box{ width: 900px;
+       float:right;
+       border:1px solid none;}
+       .box ul li{
+           width: 120px;
+           float:left;
+           margin: 10px auto;
+           text-align: center;
+       }
+ .mainmenu
+.mainmenu a
+.mainmenu a:hover
+.mainmenu img{
+position: fixed;
+z-index: -1;
+top:0px; left:0px; width:100%; height: 100vh;
+opacity: 0.9;
+/*object-fit:cover;*/
+transition: all ease 0.5s;
+}
+   .wd{
+           width: 300px;
+           height: 539px;
+           background-color: black;
+           opacity: 0.8;
+           padding: 55px;
+       }
+       .wd h1{
+           text-align: center;
+           text-transform: uppercase;
+           font-weight: 300px;
+       }
+       .wd h4{
+           text-align: justify;
+           color:darkgray;
+           font-weight: 100px;
+       }
+       .wd h2{
+           text-align: center;
+           text-transform: uppercase;
+           font-weight: normal;
+           margin: 40px auto;
+       }
+       .opt form , .action-btn{
+           background-color: black;
+           color:white;
+         /* padding:10px;*/
+           margin:-14px auto;
+           padding-left: 50px;
+           padding-right: 50px;
+           text-align: center;
+           font-size: 16px;
+       }
+     form, .action-btn {
+       animation: glowing 600ms infinite;
+       font-weight: 500%;
+      }
+      @keyframes glowing {
+ 10% {
+   background-color: red;
+ }
+ 50% {
+   background-color: orange;
+ }
+ 50% {
+   background-color: blue;
+ }
+}
+   </style>
+
+   <link rel="favicon" href="favicon.ico">
+   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css"><link>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(function(){
+var image = $(".mainmenu").find('img').attr('src');
+$(".mainmenu a").mouseover(function(){
+var newimg = $(this).attr('data-image');
+$(this).parent().find('img').attr("src", newimg);
+});
+});
+</script>
+   <div class="box">
+<div class="mainmenu">
+<a href=""><i class="fa fa-home"></i><b>Home</b></a> &nbsp;
+<a href="https://d4t7t8y8xqo0t.cloudfront.net/resized/1080X/restaurant%2F504036%2Fmenu%2F504036_1.jpg"><b> Menu</b></a> &nbsp;
+<a href=""><b> Map  </b></a> &nbsp;
+<a href=""><b> Gallery </b></a> &nbsp;
+<a href="hotel.contactlist.html"><b> Contact</b></a>
+<img src="https://c4.wallpaperflare.com/wallpaper/869/719/717/cuisine-food-india-indian-wallpaper-preview.jpg" style="WIDTH:100%;">
+</div>
+   </div>
+   <div class="wd">
+<h1> WELCOME TO SWAG HOTEL</h1>
+<h4> <i>Order delicious food online, 100% quality, safety and taste assured.</i></h4>
+<h2> Call 9765457595 for reservations</h2>
+<div class="opt">
+<form action="" method="post">
+<a class="action-btn" href="orderpage.html">ORDER NOW </a>
+
+</form>
+</div>
+</div>
+</body>
+</html>

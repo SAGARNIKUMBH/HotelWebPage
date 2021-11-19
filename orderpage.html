@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORDER PAGE</title>
+    <style>
+      body {
+        background-color: pink;
+      }
+
+      .select-rest {
+      }
+
+      .food-wrapper {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>WELOCOME TO SWAG HOTEL</h2>
+    <h4>PLEASE FILL THE DETAILS</h4>
+    CUSTOMER NAME :&nbsp;
+    <input type="number" name="deptt" size="05" maxlength="30" value="" /><br />
+    <br />
+    CUSTOMER MOBILE NUMBER : &nbsp;
+    <input
+      type="text"
+      name="deptt"
+      size="15"
+      maxlength="10"
+      value=""
+    /><br /><br />
+    CUSTOMER AREA : &nbsp;
+    <input
+      type="text"
+      name="deptt"
+      size="15"
+      maxlength="35"
+      value=""
+    /><br /><br />
+    <div style="display: flex">
+      <div style="align-self: center">CUSTOMER ADDRESS: &nbsp;</div>
+      <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+    </div>
+    <h2>ORDER PAGE:</h2>
+    SELECT FOOD NAME :&nbsp;
+    <!-- <input type="text" name="DEPTT" step="15" maxlength="50" value=""> <br> <br> -->
+    <select class="select-rest" name="HOTEL" id="HOTEL">
+      <option value="Tea">Tea</option>
+      <option value="Coffee">Coffee</option>
+      <option value="Cold Coffee">Cold Coffee</option>
+      <option value="Upma">Upma</option>
+      <option value="Poha">Poha</option>
+      <option value="Idli">Idli</option>
+      <option value="Pav Bhaji">Pav Bhaji</option>
+      <option value="Dosa">Dosa</option>
+      <option value="Misal Pav">Misal Pav</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Lunch">Lunch</option>
+    </select>
+    <div class="food-wrapper">
+      SELECT FOOD QTY :
+      <select>
+        <option value="Full">Full</option>
+        <option value="Half">Half</option>
+      </select>
+      <select class="FOOD QTY" name="FOOD QTY" id="hotal">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+    <br />
+
+    <button
+      type="submit"
+      value=""
+      onclick="location.href='submitbuttonmassage.html';"
+    >
+      <b>SUBMIT </b>
+    </button>
+  </body>
+</html>
